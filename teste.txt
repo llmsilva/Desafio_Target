@@ -1,0 +1,55 @@
+1) def fibonacci(n):
+    # Função para gerar a sequência de Fibonacci até o valor 'n' ou superior
+    fib_sequence = [0, 1]
+    while fib_sequence[-1] < n:
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+    return fib_sequence
+
+def pertence_fibonacci(numero):
+    # Gera a sequência de Fibonacci até o número informado ou próximo dele
+    fib_sequence = fibonacci(numero)
+    
+    # Verifica se o número está na sequência
+    if numero in fib_sequence:
+        return f"O número {numero} pertence à sequência de Fibonacci."
+    else:
+        return f"O número {numero} NÃO pertence à sequência de Fibonacci."
+
+
+numero_informado = int(input("Informe um número: "))
+resultado = pertence_fibonacci(numero_informado)
+print(resultado)
+
+2) def verifica_letra_a(texto):
+    # Conta a quantidade de vezes que 'a' ou 'A' aparecem na string
+    contador = texto.lower().count('a')
+    
+    # Verifica se a letra 'a' aparece na string
+    if contador > 0:
+        return f"A letra 'a' aparece {contador} vez(es) na string."
+    else:
+        return "A letra 'a' não aparece na string."
+
+
+texto_informado = input("Informe uma string: ")
+resultado = verifica_letra_a(texto_informado)
+print(resultado)
+
+
+3) O valor da variável SOMA será 77.
+
+4)
+
+a) 9
+
+b) 128
+
+c) 49
+
+d) 100
+
+e) 13
+
+f) 200
+
+5) Para resolver esse problema, você pode usar a característica do calor que uma lâmpada emite após estar ligada por algum tempo.
